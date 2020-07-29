@@ -4,13 +4,13 @@ function tentukan_deret_aritmatika($arr) {
     
     for ( $i = sizeof($arr) - 1; $i > 0; $i--){      
     
-        if(sizeof($arr) - 2 >= 0){
-            $perbandinganKesatu = $arr[$i] - $arr[$i-1];
-            $perbandinganKedua = $arr[$i-1] - $arr[$i-2];
-            if ($perbandinganKesatu === $perbandinganKedua){            
-                echo "true<br>";
+        if(sizeof($arr) - 1 >= 0){
+            $selisih = $arr[1] - $arr[0];  
+            if ($arr[$i] - $arr[$i-1] != $selisih){            
+                return "false<br>";
             }
-            else echo "false<br>";
+            return "true<br>";
+            
         }
     }
     
