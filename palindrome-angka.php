@@ -1,21 +1,34 @@
 <?php
 function palindrome_angka($angka) {
     // tulis kode di sini
-    $wordLength = strlen($word);
-    $newWord = "";
-    for ($i = $wordLength - 1; $i >= 0; $i--){
-        $newWord .= $word[$i];
-        // echo $newWord;
+    $stringNumber = strval($angka);
+    $result = "";
+    $reverseString = "";
+
+    for ($i = strlen($stringNumber) - 1; $i >= 0; $i--){
+        $reverseString .= $stringNumber;
     }
-    if ($word === $newWord){
-        echo "palindrome($word) => output : true <br>";
+
+    if ($reverseString == $stringNumber){
+        $angka += 1;
     }
-    else{
-        echo "palindrome($word) => output : false <br>";
-  }
-  
+    while (true){
+        for($i = strlen($stringNumber) - 1; $i >= 0; $i--){
+            $reverseString .= $stringNumber;
+        }
+        if ($reverseString == $stringNumber){
+            global $result;
+            $result = $stringNumber . "<br>";
+            return $result;
+        }
+        else {
+            $angka += 1;
+        }
+    }
+}
+
   // TEST CASES
-  echo palindrome_angka(8) // 9
+  echo palindrome_angka(8); // 9
   echo palindrome_angka(10); // 11
   echo palindrome_angka(117); // 121
   echo palindrome_angka(175); // 181
