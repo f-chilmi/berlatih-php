@@ -1,0 +1,6 @@
+MEMBUAT DATABASE 'myshop'
+1. buka cmd, masuk ke folder c;\xampp\mysql\bin\
+2. ketik "mysql -u root -p" untuk masuk ke database sebagai user, bukan guest.
+3. akan diminta memasukkan password, namun defaultnya kosong jadi langsung enter.
+4. ketik "create database (nama database)".
+5. database sudah dibuat.

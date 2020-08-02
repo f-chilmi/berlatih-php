@@ -1,0 +1,21 @@
+MEMBUAT TABEL DI DALAM DATABASE
+
+1. use myshop;
+2. create table users (
+	id int primary key auto_increment,
+	name varchar(255),
+	email varchar(255),
+	password varchar(255)
+	);
+3. create table users (
+	id int primary key auto_increment,
+	name varchar(255),
+	description varchar(255),
+	price int,
+	stock int,
+	category int
+	);
+4. create table categories (
+	id int primary key auto_increment,
+	name varchar(255)
+	);

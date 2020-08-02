@@ -1,0 +1,5 @@
+MENGAMBIL DATA DARI DATABASE
+a. select id, name, email from users;
+b. select * from items where price>1000000;
+c. select * from items where name like '%uniklo%';
+

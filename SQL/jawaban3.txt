@@ -1,0 +1,14 @@
+MEMASUKKAN DATA PADA TABEL
+
+1. insert into users values ( '', 'John Doe', 'john@doe.com', 'john123');
+2. insert into users values ( '', 'Jane Doe', 'jane@doe.com', 'jane123');
+3. insert into categories values 
+	('', 'gadget'),
+	('', 'cloth'),
+	('', 'men'),
+	('', 'women'),
+	('', 'branded');
+4. insert into items values
+	('', 'Sumsang b50', 'hape keren dari merek sumsang', 4000000, 100, 1),
+	('', 'Uniklooh', 'baju keren dari brand ternama', 500000, 50, 2),
+	('', 'IMHO Watch', 'jam tangan anak yang jujur banget', 2000000, 10, 1);
